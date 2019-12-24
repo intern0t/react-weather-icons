@@ -1,6 +1,6 @@
 # react-weather-icons
 
-> A React component library for weather icons by @erikflowers.
+> A React component library for [weather icons](https://github.com/erikflowers/weather-icons) by [@erikflowers](https://github.com/erikflowers).
 
 [![NPM](https://img.shields.io/npm/v/react-weather-icons.svg)](https://www.npmjs.com/package/react-weather-icons) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
