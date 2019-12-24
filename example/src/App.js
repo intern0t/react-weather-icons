@@ -3,10 +3,11 @@ import * as Icons from "react-weather-icons";
 
 export default class App extends Component {
 	render() {
-		let color = "#000000",
+		let bgColor = "#FFF",
+			color = "#000",
 			size = 40;
 		return (
-			<div>
+			<div style={{ background: bgColor }}>
 				<Icons.HurricaneWarning color={color} size={size} />
 				<Icons.Time3 color={color} size={size} />
 				<Icons.WindBeaufort6 color={color} size={size} />

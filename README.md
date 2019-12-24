@@ -6,6 +6,8 @@
 
 ![Weather Icons Black](screenshots/icons-black.png)
 
+> View more color play [Samples & Color play](/Samples.md)
+
 ## Install
 
 ```bash
