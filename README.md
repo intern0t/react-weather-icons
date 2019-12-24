@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-weather-icons.svg)](https://www.npmjs.com/package/react-weather-icons) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![Weather Icons Black](screenshots/icons-black.png)
+
 ## Install
 
 ```bash

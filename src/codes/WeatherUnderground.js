@@ -1,0 +1,21 @@
+module.exports = {
+  "wi-wu-chanceflurries": "snow-wind",
+  "wi-wu-chancerain": "rain",
+  "wi-wu-chancesleat": "sleet",
+  "wi-wu-chancesnow": "snow",
+  "wi-wu-chancetstorms": "thunderstorm",
+  "wi-wu-clear": "day-sunny",
+  "wi-wu-cloudy": "day-cloudy",
+  "wi-wu-flurries": "snow-wind",
+  "wi-wu-hazy": "day-haze",
+  "wi-wu-mostlycloudy": "day-cloudy",
+  "wi-wu-mostlysunny": "day-sunny",
+  "wi-wu-partlycloudy": "day-cloudy",
+  "wi-wu-partlysunny": "day-sunny",
+  "wi-wu-rain": "showers",
+  "wi-wu-sleat": "sleet",
+  "wi-wu-snow": "snow",
+  "wi-wu-sunny": "day-sunny",
+  "wi-wu-tstorms": "thunderstorm",
+  "wi-wu-unknown": "day-sunny"
+};
