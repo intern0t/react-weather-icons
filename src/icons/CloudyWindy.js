@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CloudyWindy = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M3.1,21.04c0-0.24,0.08-0.45,0.25-0.61s0.38-0.24,0.63-0.24h8.97c0.24,0,0.43,0.08,0.59,0.24c0.16,0.16,0.23,0.36,0.23,0.61
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M3.1,21.04c0-0.24,0.08-0.45,0.25-0.61s0.38-0.24,0.63-0.24h8.97c0.24,0,0.43,0.08,0.59,0.24c0.16,0.16,0.23,0.36,0.23,0.61
 	c0,0.24-0.08,0.44-0.24,0.6c-0.16,0.16-0.35,0.24-0.59,0.24H3.98c-0.25,0-0.46-0.08-0.63-0.24S3.1,21.27,3.1,21.04z M5.73,17.98
 	c0-0.24,0.09-0.44,0.27-0.6c0.14-0.15,0.34-0.23,0.59-0.23h9c0.23,0,0.42,0.08,0.58,0.23s0.23,0.35,0.23,0.59
 	c0,0.24-0.08,0.44-0.23,0.61c-0.15,0.17-0.35,0.25-0.58,0.25h-9c-0.23,0-0.43-0.09-0.6-0.26S5.73,18.21,5.73,17.98z M6.35,15.65
@@ -34,19 +34,19 @@ const CloudyWindy = props => {
 	C6.36,15.6,6.35,15.62,6.35,15.65z M7.5,24.13c0-0.24,0.09-0.44,0.26-0.6c0.15-0.16,0.35-0.23,0.59-0.23h8.99
 	c0.24,0,0.45,0.08,0.61,0.24c0.17,0.16,0.25,0.36,0.25,0.6c0,0.24-0.08,0.44-0.25,0.61c-0.17,0.17-0.37,0.25-0.61,0.25H8.35
 	c-0.23,0-0.43-0.08-0.6-0.25C7.58,24.57,7.5,24.37,7.5,24.13z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 CloudyWindy.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 CloudyWindy.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default CloudyWindy

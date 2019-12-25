@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayCloudyHigh = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M3.95,13.05c0-0.93,0.29-1.75,0.87-2.48s1.31-1.2,2.19-1.4c0.26-1.1,0.82-2,1.7-2.71s1.88-1.06,3.01-1.06
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M3.95,13.05c0-0.93,0.29-1.75,0.87-2.48s1.31-1.2,2.19-1.4c0.26-1.1,0.82-2,1.7-2.71s1.88-1.06,3.01-1.06
 	c1.1,0,2.08,0.35,2.95,1.04s1.43,1.57,1.68,2.65h0.26c1.1,0,2.04,0.39,2.82,1.16c0.78,0.77,1.17,1.71,1.17,2.81
 	c0,0.01,0,0.02,0,0.04c0,0.02,0,0.04,0,0.06c0.75,0.8,1.12,1.75,1.12,2.85c0,0.76-0.19,1.46-0.57,2.1
 	c-0.38,0.65-0.89,1.16-1.53,1.53c-0.64,0.38-1.34,0.56-2.09,0.56c-0.96,0-1.82-0.3-2.56-0.89s-1.24-1.35-1.48-2.26H7.79
@@ -41,19 +41,19 @@ const DayCloudyHigh = props => {
 	c-0.12,0.12-0.28,0.19-0.47,0.19s-0.35-0.06-0.47-0.19C21.32,11.94,21.26,11.78,21.26,11.59z M23.08,15.99
 	c0-0.19,0.06-0.35,0.19-0.48c0.12-0.13,0.28-0.2,0.47-0.2h1.62c0.19,0,0.36,0.07,0.5,0.2s0.21,0.29,0.21,0.48
 	c0,0.19-0.07,0.36-0.21,0.49c-0.14,0.13-0.3,0.2-0.5,0.2h-1.62c-0.19,0-0.34-0.07-0.47-0.2C23.14,16.35,23.08,16.19,23.08,15.99z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayCloudyHigh.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayCloudyHigh.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayCloudyHigh

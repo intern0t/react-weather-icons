@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltThunderstorm = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.08,16.88c0,1.11,0.33,2.1,0.99,2.98s1.52,1.47,2.58,1.79l-0.66,1.69c-0.03,0.14,0.02,0.21,0.15,0.21h2.12l-0.97,3.51
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.08,16.88c0,1.11,0.33,2.1,0.99,2.98s1.52,1.47,2.58,1.79l-0.66,1.69c-0.03,0.14,0.02,0.21,0.15,0.21h2.12l-0.97,3.51
 	h0.29l3.91-4.94c0.04-0.05,0.04-0.1,0.01-0.15c-0.03-0.05-0.08-0.07-0.15-0.07h-2.18l2.48-4.63c0.07-0.14,0.03-0.22-0.13-0.22H9.56
 	c-0.09,0-0.16,0.05-0.23,0.14l-1.07,2.88c-0.72-0.18-1.31-0.57-1.78-1.17c-0.47-0.6-0.7-1.27-0.7-2.01c0-0.83,0.28-1.55,0.85-2.17
 	c0.57-0.62,1.27-0.97,2.1-1.07l0.52-0.08c0.13,0,0.2-0.06,0.2-0.17l0.07-0.52c0.11-1.08,0.56-1.99,1.37-2.72s1.76-1.1,2.85-1.1
@@ -40,19 +40,19 @@ const NightAltThunderstorm = props => {
 	c-0.23-0.07-0.45-0.05-0.65,0.06c-0.2,0.11-0.33,0.27-0.39,0.5l-1.5,5.82C16.36,23.51,16.35,23.6,16.35,23.68z M17.59,8.75
 	c0.33-0.57,0.77-1,1.33-1.3c0.55-0.3,1.14-0.45,1.76-0.45c0.12,0,0.22,0,0.27,0.01v0.32c0,0.96,0.26,1.87,0.78,2.73
 	s1.25,1.51,2.17,1.97c-0.18,0.42-0.44,0.77-0.79,1.07c-0.92-0.79-1.99-1.18-3.22-1.18h-0.32C19.29,10.66,18.63,9.61,17.59,8.75z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltThunderstorm.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltThunderstorm.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltThunderstorm

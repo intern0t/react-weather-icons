@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightLightning = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.29,16.93c0,0.66,0.12,1.28,0.38,1.88s0.59,1.11,1.02,1.55s0.94,0.79,1.52,1.05s1.21,0.42,1.87,0.45
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.29,16.93c0,0.66,0.12,1.28,0.38,1.88s0.59,1.11,1.02,1.55s0.94,0.79,1.52,1.05s1.21,0.42,1.87,0.45
 	c0.12,0,0.18-0.06,0.18-0.17v-1.34c0-0.11-0.06-0.17-0.18-0.17c-0.87-0.06-1.6-0.41-2.19-1.03c-0.59-0.62-0.89-1.37-0.89-2.22
 	c0-0.84,0.28-1.57,0.85-2.18c0.57-0.62,1.26-0.97,2.1-1.04l0.52-0.06c0.12,0,0.19-0.06,0.19-0.18l0.08-0.52
 	c0.07-0.71,0.3-1.36,0.69-1.94s0.9-1.04,1.52-1.36s1.29-0.49,2.02-0.49c1.09,0,2.04,0.36,2.85,1.08c0.81,0.72,1.27,1.62,1.39,2.69
@@ -33,19 +33,19 @@ const NightLightning = props => {
 	c0.07-0.14,0.03-0.22-0.14-0.22h-2.94c-0.08,0-0.14,0.05-0.21,0.14L11.94,21.55z M18,9.05c0.67-0.66,1.49-0.99,2.47-0.99
 	c0.98,0,1.81,0.34,2.5,1.03C23.66,9.77,24,10.61,24,11.6c0,0.59-0.17,1.19-0.52,1.8c-0.97-0.93-2.12-1.4-3.45-1.4h-0.31
 	C19.44,10.81,18.86,9.83,18,9.05z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightLightning.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightLightning.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightLightning

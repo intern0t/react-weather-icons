@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DaySleet = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.49,16.92L1.49,16.92c0-1.17,0.36-2.19,1.08-3.09s1.64-1.48,2.74-1.74c0.31-1.37,1.01-2.49,2.1-3.38
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.49,16.92L1.49,16.92c0-1.17,0.36-2.19,1.08-3.09s1.64-1.48,2.74-1.74c0.31-1.37,1.01-2.49,2.1-3.38
 	c1.1-0.88,2.35-1.32,3.77-1.32c0.99,0,1.9,0.22,2.72,0.66c0.5-0.53,1.09-0.95,1.76-1.25c0.67-0.3,1.37-0.45,2.09-0.45
 	c0.95,0,1.83,0.24,2.64,0.71c0.81,0.47,1.45,1.11,1.92,1.92c0.47,0.81,0.71,1.69,0.71,2.64c0,1.23-0.38,2.33-1.14,3.29
 	c0.29,0.61,0.43,1.28,0.43,2.02c0,0.88-0.21,1.7-0.64,2.45c-0.42,0.75-1,1.36-1.74,1.81c-0.73,0.46-1.54,0.7-2.42,0.72
@@ -61,19 +61,19 @@ const DaySleet = props => {
 	l-0.02-0.02c-0.24,0-0.44-0.08-0.62-0.24l-0.65-0.64C23.35,18.41,23.26,18.21,23.26,17.98z M24.73,11.61c0-0.24,0.08-0.44,0.25-0.6
 	c0.17-0.16,0.37-0.24,0.61-0.24h2.06c0.24,0,0.45,0.08,0.61,0.24s0.25,0.36,0.25,0.6c0,0.24-0.08,0.44-0.25,0.61
 	c-0.17,0.17-0.37,0.25-0.61,0.25h-2.06c-0.24,0-0.44-0.09-0.6-0.27C24.81,12.05,24.73,11.85,24.73,11.61z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DaySleet.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DaySleet.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DaySleet

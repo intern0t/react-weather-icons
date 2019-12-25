@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightHail = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.25,16.89c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.54c0.12,0,0.18-0.06,0.18-0.18v-1.33
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.25,16.89c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.54c0.12,0,0.18-0.06,0.18-0.18v-1.33
 	c0-0.12-0.06-0.18-0.18-0.18c-0.86-0.04-1.58-0.38-2.18-1.02c-0.6-0.64-0.9-1.39-0.9-2.26c0-0.83,0.28-1.55,0.84-2.17
 	c0.56-0.61,1.26-0.97,2.1-1.07l0.52-0.07c0.13,0,0.2-0.06,0.2-0.18l0.08-0.51c0.11-1.08,0.56-1.99,1.37-2.71
 	c0.81-0.73,1.76-1.09,2.85-1.09c1.09,0,2.04,0.37,2.86,1.1s1.28,1.63,1.4,2.71l0.07,0.58c0,0.12,0.06,0.18,0.18,0.18h1.62
@@ -47,19 +47,19 @@ const NightHail = props => {
 	c-0.23-0.07-0.44-0.05-0.64,0.06c-0.19,0.11-0.33,0.28-0.4,0.5l-0.98,3.13C17.02,20.91,17.01,21.01,17.01,21.03z M18.04,9.02
 	c0.69-0.66,1.51-0.99,2.48-0.99c0.97,0,1.81,0.35,2.5,1.04c0.69,0.69,1.04,1.53,1.04,2.5c0,0.62-0.17,1.23-0.52,1.84
 	c-0.98-0.98-2.14-1.47-3.49-1.47h-0.33C19.41,10.78,18.85,9.81,18.04,9.02z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightHail.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightHail.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightHail

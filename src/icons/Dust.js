@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Dust = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M7.33,16.58c0-0.23,0.08-0.41,0.23-0.56c0.16-0.15,0.37-0.22,0.64-0.22h5.71c0.27,0,0.48,0.07,0.64,0.22
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M7.33,16.58c0-0.23,0.08-0.41,0.23-0.56c0.16-0.15,0.37-0.22,0.64-0.22h5.71c0.27,0,0.48,0.07,0.64,0.22
 	c0.16,0.15,0.23,0.33,0.23,0.56c0,0.27-0.08,0.49-0.23,0.64s-0.37,0.23-0.64,0.23H8.2c-0.27,0-0.48-0.08-0.64-0.23
 	S7.33,16.86,7.33,16.58z M7.33,10.67c0-0.22,0.08-0.41,0.23-0.55C7.72,9.97,7.93,9.9,8.2,9.9h2.96c0.27,0,0.48,0.07,0.64,0.22
 	c0.16,0.14,0.24,0.33,0.24,0.55c0,0.27-0.08,0.48-0.24,0.64c-0.16,0.16-0.37,0.24-0.64,0.24H8.2c-0.27,0-0.48-0.08-0.64-0.23
@@ -46,19 +46,19 @@ const Dust = props => {
 	c-0.14,0.16-0.33,0.24-0.55,0.24h-1.96c-0.23,0-0.44-0.08-0.61-0.24C18.38,14.09,18.29,13.88,18.29,13.61z M21.03,10.67
 	c0-0.22,0.07-0.4,0.22-0.55C21.4,9.97,21.58,9.9,21.8,9.9c0.27,0,0.48,0.07,0.64,0.22c0.16,0.14,0.24,0.33,0.24,0.55
 	c0,0.27-0.08,0.48-0.24,0.64c-0.16,0.16-0.37,0.24-0.64,0.24c-0.23,0-0.41-0.08-0.55-0.24C21.1,11.15,21.03,10.94,21.03,10.67z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Dust.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Dust.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Dust

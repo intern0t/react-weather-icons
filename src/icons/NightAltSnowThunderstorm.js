@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltSnowThunderstorm = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.09,16.89c0,1.11,0.33,2.1,0.99,2.97c0.66,0.87,1.52,1.47,2.58,1.79l-0.65,1.7c-0.04,0.14,0,0.21,0.14,0.21h2.12
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.09,16.89c0,1.11,0.33,2.1,0.99,2.97c0.66,0.87,1.52,1.47,2.58,1.79l-0.65,1.7c-0.04,0.14,0,0.21,0.14,0.21h2.12
 	l-1.29,4.18h0.28l4.23-5.62c0.04-0.04,0.04-0.09,0.02-0.14c-0.03-0.05-0.07-0.07-0.14-0.07h-2.18l2.47-4.64
 	c0.07-0.14,0.03-0.22-0.13-0.22H9.57c-0.09,0-0.16,0.05-0.22,0.15l-1.07,2.88c-0.71-0.18-1.3-0.57-1.78-1.17s-0.71-1.27-0.71-2.01
 	c0-0.83,0.28-1.55,0.85-2.17c0.57-0.61,1.27-0.97,2.1-1.07l0.53-0.07c0.13,0,0.2-0.06,0.2-0.18l0.07-0.51
@@ -45,19 +45,19 @@ const NightAltSnowThunderstorm = props => {
 	 M17.59,8.77c0.33-0.56,0.78-0.99,1.34-1.29s1.15-0.45,1.76-0.45h0.22v0.32c0,0.64,0.11,1.26,0.34,1.86
 	c0.23,0.6,0.56,1.15,1.02,1.66c0.45,0.51,0.99,0.91,1.61,1.21c-0.17,0.38-0.42,0.72-0.76,1.03c-0.91-0.78-1.98-1.17-3.22-1.17h-0.33
 	C19.28,10.68,18.62,9.62,17.59,8.77z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltSnowThunderstorm.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltSnowThunderstorm.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltSnowThunderstorm

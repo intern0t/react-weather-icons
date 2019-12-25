@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CloudDown = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.61,16.88c0,1.34,0.47,2.48,1.4,3.44c0.93,0.96,2.07,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.34
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.61,16.88c0,1.34,0.47,2.48,1.4,3.44c0.93,0.96,2.07,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.34
 	c0-0.12-0.06-0.18-0.17-0.18c-0.86-0.04-1.59-0.38-2.19-1.02c-0.6-0.64-0.9-1.39-0.9-2.26c0-0.83,0.28-1.55,0.85-2.17
 	c0.57-0.62,1.27-0.97,2.1-1.07L9.8,13.6c0.13,0,0.2-0.06,0.2-0.17l0.08-0.55c0.1-1.08,0.55-1.99,1.36-2.71
 	c0.81-0.73,1.76-1.09,2.86-1.09c1.09,0,2.04,0.36,2.86,1.09c0.82,0.73,1.28,1.63,1.4,2.71l0.07,0.58c0,0.11,0.06,0.17,0.17,0.17
@@ -33,19 +33,19 @@ const CloudDown = props => {
 	c-0.24,0-0.44,0.08-0.62,0.23l-1.12,1.11v-3.98c0-0.24-0.08-0.43-0.25-0.59c-0.17-0.16-0.37-0.23-0.61-0.23s-0.43,0.08-0.59,0.23
 	c-0.16,0.16-0.23,0.35-0.23,0.59v3.98l-1.1-1.11c-0.18-0.16-0.38-0.23-0.63-0.23c-0.25,0-0.45,0.08-0.61,0.23
 	C11.66,17.97,11.58,18.17,11.58,18.4z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 CloudDown.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 CloudDown.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default CloudDown

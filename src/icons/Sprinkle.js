@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Sprinkle = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.64,16.91c0-1.15,0.36-2.17,1.08-3.07c0.72-0.9,1.63-1.47,2.73-1.73c0.31-1.36,1.01-2.48,2.1-3.35s2.35-1.31,3.76-1.31
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.64,16.91c0-1.15,0.36-2.17,1.08-3.07c0.72-0.9,1.63-1.47,2.73-1.73c0.31-1.36,1.01-2.48,2.1-3.35s2.35-1.31,3.76-1.31
 	c1.38,0,2.6,0.43,3.68,1.27c1.07,0.85,1.78,1.94,2.11,3.28h0.31c0.89,0,1.72,0.22,2.48,0.65s1.37,1.03,1.81,1.78
 	c0.44,0.75,0.67,1.58,0.67,2.47c0,1.34-0.46,2.49-1.38,3.45s-2.05,1.47-3.38,1.51c-0.13,0-0.2-0.06-0.2-0.17v-1.33
 	c0-0.12,0.07-0.18,0.2-0.18c0.86-0.04,1.58-0.38,2.18-1.02s0.9-1.39,0.9-2.26s-0.32-1.62-0.98-2.26c-0.65-0.64-1.42-0.96-2.31-0.96
@@ -35,19 +35,19 @@ const Sprinkle = props => {
 	c0,0.64-0.23,1.19-0.68,1.65s-1.01,0.68-1.66,0.68c-0.64,0-1.19-0.23-1.65-0.67C13.77,22.98,13.55,22.43,13.55,21.78z M15.02,15.12
 	c0-0.42,0.32-0.95,0.97-1.6l0.24,0.25c0.18,0.21,0.33,0.45,0.48,0.71c0.14,0.26,0.22,0.47,0.22,0.64c0,0.26-0.09,0.48-0.28,0.66
 	c-0.18,0.18-0.4,0.28-0.66,0.28c-0.27,0-0.5-0.09-0.69-0.28C15.11,15.6,15.02,15.38,15.02,15.12z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Sprinkle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Sprinkle.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Sprinkle

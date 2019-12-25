@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltCloudyWindy = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M2.35,21.05c0,0.24,0.08,0.43,0.25,0.59c0.17,0.16,0.38,0.23,0.63,0.23h9.4c0.24,0,0.43-0.08,0.59-0.23
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M2.35,21.05c0,0.24,0.08,0.43,0.25,0.59c0.17,0.16,0.38,0.23,0.63,0.23h9.4c0.24,0,0.43-0.08,0.59-0.23
 	c0.16-0.16,0.23-0.35,0.23-0.59c0-0.25-0.08-0.45-0.23-0.61c-0.16-0.16-0.35-0.24-0.59-0.24h-9.4c-0.25,0-0.46,0.08-0.63,0.24
 	S2.35,20.8,2.35,21.05z M4.98,18c0,0.24,0.09,0.44,0.26,0.6c0.16,0.17,0.36,0.25,0.6,0.25h9.42c0.23,0,0.43-0.08,0.59-0.25
 	c0.16-0.17,0.24-0.37,0.24-0.6c0-0.23-0.08-0.43-0.23-0.59s-0.35-0.24-0.59-0.24H5.85c-0.24,0-0.44,0.08-0.61,0.24
@@ -40,19 +40,19 @@ const NightAltCloudyWindy = props => {
 	 M19.33,8.78c0.34-0.55,0.79-0.98,1.35-1.28c0.55-0.3,1.12-0.45,1.7-0.44c0.11,0,0.2,0,0.25,0.01v0.24c0,0.97,0.26,1.9,0.79,2.79
 	c0.53,0.88,1.25,1.55,2.17,1.98c-0.17,0.4-0.43,0.76-0.76,1.07c-0.88-0.79-1.95-1.18-3.2-1.18h-0.32
 	C21.06,10.77,20.4,9.71,19.33,8.78z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltCloudyWindy.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltCloudyWindy.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltCloudyWindy

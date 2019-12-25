@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CloudyGusts = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M3.62,21.01c0-0.25,0.08-0.46,0.25-0.63c0.17-0.16,0.37-0.24,0.6-0.24h5.42c0.74,0,1.37,0.26,1.89,0.79
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M3.62,21.01c0-0.25,0.08-0.46,0.25-0.63c0.17-0.16,0.37-0.24,0.6-0.24h5.42c0.74,0,1.37,0.26,1.89,0.79
 	c0.52,0.53,0.78,1.16,0.78,1.9c0,0.74-0.26,1.38-0.78,1.9c-0.52,0.52-1.15,0.78-1.89,0.78s-1.38-0.26-1.9-0.79
 	c-0.16-0.16-0.23-0.36-0.23-0.6c0-0.24,0.08-0.45,0.23-0.6c0.15-0.16,0.35-0.24,0.6-0.24c0.23,0,0.43,0.08,0.61,0.24
 	c0.2,0.19,0.43,0.29,0.69,0.29s0.49-0.1,0.68-0.29c0.19-0.19,0.29-0.42,0.29-0.7c0-0.26-0.1-0.49-0.29-0.68s-0.42-0.29-0.68-0.29
@@ -37,19 +37,19 @@ const CloudyGusts = props => {
 	c-0.45-0.76-1.05-1.37-1.82-1.81c-0.77-0.44-1.6-0.67-2.51-0.67h-0.31c-0.31-1.33-1.01-2.42-2.1-3.27
 	c-1.08-0.85-2.33-1.27-3.73-1.27c-1.41,0-2.66,0.44-3.75,1.32s-1.78,2-2.07,3.37c-0.86,0.2-1.62,0.61-2.28,1.23
 	s-1.12,1.36-1.38,2.21v0.04C5.77,15.56,5.77,15.58,5.77,15.61z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 CloudyGusts.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 CloudyGusts.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default CloudyGusts

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayCloudyGusts = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M0.35,21.01c0,0.24,0.09,0.44,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25h5.88c0.26,0,0.48,0.09,0.68,0.28
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M0.35,21.01c0,0.24,0.09,0.44,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25h5.88c0.26,0,0.48,0.09,0.68,0.28
 	c0.2,0.19,0.3,0.42,0.3,0.68s-0.1,0.5-0.3,0.69c-0.2,0.19-0.42,0.29-0.68,0.29c-0.26,0-0.48-0.1-0.68-0.3
 	c-0.18-0.16-0.38-0.24-0.61-0.24c-0.24,0-0.44,0.08-0.6,0.24c-0.16,0.16-0.24,0.36-0.24,0.6c0,0.24,0.08,0.44,0.24,0.6
 	c0.53,0.53,1.16,0.8,1.89,0.8c0.74,0,1.37-0.26,1.88-0.78c0.52-0.52,0.78-1.15,0.78-1.89s-0.26-1.37-0.78-1.89
@@ -50,19 +50,19 @@ const DayCloudyGusts = props => {
 	c-0.25,0-0.46,0.08-0.63,0.25C24.52,17.45,24.44,17.65,24.44,17.89z M25.95,11.57c0,0.24,0.08,0.43,0.25,0.59
 	c0.15,0.18,0.34,0.26,0.57,0.26h2.02c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6c0-0.23-0.09-0.43-0.26-0.6
 	c-0.17-0.17-0.37-0.26-0.6-0.26h-2.02c-0.24,0-0.43,0.08-0.59,0.25C26.03,11.13,25.95,11.33,25.95,11.57z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayCloudyGusts.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayCloudyGusts.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayCloudyGusts

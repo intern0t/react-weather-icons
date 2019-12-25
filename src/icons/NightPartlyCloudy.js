@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightPartlyCloudy = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M6.77,19.61c0,0.97,0.35,1.81,1.06,2.52c0.71,0.71,1.55,1.06,2.52,1.06h6.85c0.97,0,1.8-0.35,2.49-1.05
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M6.77,19.61c0,0.97,0.35,1.81,1.06,2.52c0.71,0.71,1.55,1.06,2.52,1.06h6.85c0.97,0,1.8-0.35,2.49-1.05
 	c0.69-0.7,1.04-1.54,1.04-2.53c0-0.48-0.07-0.89-0.21-1.23c0.83-0.53,1.49-1.24,1.97-2.12c0.48-0.88,0.73-1.83,0.73-2.84
 	c0-0.81-0.16-1.59-0.47-2.33c-0.32-0.74-0.74-1.38-1.28-1.91S20.3,8.22,19.56,7.9c-0.74-0.32-1.51-0.48-2.32-0.48
 	c-1.09,0-2.1,0.27-3.02,0.81s-1.65,1.27-2.18,2.18c-0.53,0.92-0.79,1.92-0.79,3.01v0.34c-1.01,0.57-1.67,1.41-1.99,2.49
@@ -31,19 +31,19 @@ const NightPartlyCloudy = props => {
 	c-0.45,0-0.83-0.16-1.14-0.48S8.75,20.06,8.75,19.61z M13.18,13.22c0.07-1.09,0.49-2.01,1.27-2.76c0.78-0.74,1.71-1.12,2.8-1.12
 	c1.11,0,2.06,0.4,2.84,1.19c0.78,0.79,1.17,1.76,1.17,2.89c0,0.7-0.17,1.35-0.51,1.95c-0.34,0.6-0.8,1.08-1.38,1.45
 	c-0.59-0.49-1.27-0.73-2.03-0.73c-0.29-0.88-0.81-1.57-1.54-2.09c-0.73-0.52-1.56-0.78-2.49-0.78H13.18z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightPartlyCloudy.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightPartlyCloudy.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightPartlyCloudy

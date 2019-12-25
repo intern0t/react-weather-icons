@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Train = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.25,12.68v-0.32c0-0.1,0.03-0.18,0.1-0.25c0.07-0.07,0.15-0.1,0.25-0.1h7.58c0.1,0,0.18,0.03,0.25,0.1
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.25,12.68v-0.32c0-0.1,0.03-0.18,0.1-0.25c0.07-0.07,0.15-0.1,0.25-0.1h7.58c0.1,0,0.18,0.03,0.25,0.1
 	c0.07,0.07,0.1,0.15,0.1,0.25v0.32c0,0.1-0.03,0.18-0.1,0.25c-0.07,0.07-0.15,0.1-0.25,0.1h-0.44v1.65h2.12
 	c0.02-0.28,0.14-0.52,0.35-0.71c0.21-0.19,0.46-0.29,0.75-0.29c0.29,0,0.53,0.1,0.74,0.29c0.21,0.19,0.32,0.43,0.35,0.71h1.32v-3.39
 	c-0.14-0.01-0.25-0.06-0.35-0.16c-0.1-0.1-0.15-0.23-0.15-0.37v-0.31c0-0.14,0.05-0.27,0.16-0.38s0.24-0.16,0.39-0.16h1.99
@@ -41,19 +41,19 @@ const Train = props => {
 	c0.28-0.28,0.42-0.61,0.42-1.01c0-0.34-0.11-0.64-0.33-0.9c-0.22-0.26-0.5-0.43-0.83-0.52c-0.08-0.4-0.29-0.73-0.62-0.99
 	s-0.71-0.39-1.12-0.39c-0.41,0-0.77,0.13-1.08,0.38c-0.31,0.25-0.52,0.58-0.62,0.97h-0.11c-0.41,0-0.77,0.13-1.08,0.39
 	C15.93,4.75,15.78,5.07,15.78,5.43z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Train.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Train.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Train

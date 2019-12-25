@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltRainWind = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.06,16.93c0,1.12,0.33,2.12,1,3c0.67,0.88,1.52,1.47,2.57,1.77c0.09,0.02,0.17-0.01,0.24-0.08L9,20.22
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.06,16.93c0,1.12,0.33,2.12,1,3c0.67,0.88,1.52,1.47,2.57,1.77c0.09,0.02,0.17-0.01,0.24-0.08L9,20.22
 	c-0.88,0-1.63-0.32-2.27-0.97c-0.64-0.65-0.96-1.42-0.96-2.32c0-0.84,0.28-1.56,0.84-2.17s1.27-0.95,2.11-1.03l0.5-0.07
 	c0.12,0,0.19-0.06,0.19-0.19l0.08-0.53c0.12-1.09,0.59-2,1.41-2.73c0.81-0.73,1.77-1.1,2.86-1.1c1.09,0,2.04,0.37,2.86,1.1
 	s1.29,1.64,1.41,2.72l0.07,0.58c0,0.11,0.06,0.17,0.18,0.17h1.62c0.88,0,1.64,0.32,2.28,0.96s0.96,1.4,0.96,2.28
@@ -47,19 +47,19 @@ const NightAltRainWind = props => {
 	c0.31-0.57,0.75-1.01,1.3-1.32c0.55-0.3,1.14-0.45,1.76-0.44c0.12,0,0.21,0,0.26,0.01v0.3c0,0.97,0.27,1.89,0.8,2.75
 	c0.53,0.87,1.26,1.52,2.19,1.96c-0.25,0.47-0.51,0.84-0.79,1.12c-0.89-0.79-1.96-1.18-3.22-1.18h-0.32
 	C19.26,10.74,18.6,9.67,17.57,8.81z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltRainWind.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltRainWind.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltRainWind

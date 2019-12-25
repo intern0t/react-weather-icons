@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltSleet = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.09,17.13v-0.37c0.04-1.12,0.42-2.11,1.13-2.97c0.71-0.86,1.61-1.42,2.68-1.67c0.31-1.36,1.02-2.48,2.11-3.36
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.09,17.13v-0.37c0.04-1.12,0.42-2.11,1.13-2.97c0.71-0.86,1.61-1.42,2.68-1.67c0.31-1.36,1.02-2.48,2.11-3.36
 	s2.35-1.31,3.76-1.31c0.74,0,1.53,0.15,2.38,0.46c0.28-0.46,0.61-0.86,0.99-1.2c0.38-0.34,0.77-0.6,1.18-0.79
 	c0.41-0.18,0.8-0.32,1.19-0.4c0.38-0.08,0.76-0.12,1.13-0.12c0.39,0,0.8,0.04,1.24,0.13l0.8,0.25c0.12,0.06,0.17,0.13,0.14,0.23
 	L22.7,6.63c-0.07,0.29-0.1,0.57-0.1,0.84c0,0.31,0.05,0.62,0.15,0.95c0.1,0.32,0.24,0.64,0.44,0.95s0.46,0.59,0.8,0.85
@@ -53,19 +53,19 @@ const NightAltSleet = props => {
 	c1.04,0.85,1.7,1.9,1.98,3.16h0.33c1.23,0,2.3,0.39,3.22,1.18c0.34-0.31,0.59-0.65,0.76-1.04c-0.62-0.3-1.15-0.7-1.61-1.21
 	c-0.45-0.51-0.79-1.06-1.02-1.66c-0.23-0.6-0.34-1.22-0.34-1.86V7.09h-0.22c-0.62,0-1.21,0.15-1.77,0.45
 	C18.36,7.84,17.92,8.27,17.59,8.82z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltSleet.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltSleet.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltSleet

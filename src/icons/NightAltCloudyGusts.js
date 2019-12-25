@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltCloudyGusts = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M2.98,21.02c0,0.23,0.09,0.43,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25H9.6c0.26,0,0.49,0.1,0.69,0.29
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M2.98,21.02c0,0.23,0.09,0.43,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25H9.6c0.26,0,0.49,0.1,0.69,0.29
 	c0.2,0.19,0.3,0.42,0.3,0.68c0,0.27-0.1,0.5-0.3,0.69s-0.43,0.29-0.69,0.29c-0.26,0-0.48-0.1-0.68-0.3
 	c-0.18-0.16-0.38-0.24-0.61-0.24c-0.24,0-0.44,0.08-0.6,0.24c-0.16,0.16-0.24,0.36-0.24,0.6c0,0.22,0.08,0.42,0.24,0.6
 	c0.52,0.53,1.16,0.79,1.89,0.79s1.37-0.26,1.89-0.78c0.52-0.52,0.78-1.15,0.78-1.89c0-0.74-0.26-1.37-0.78-1.89
@@ -43,19 +43,19 @@ const NightAltCloudyGusts = props => {
 	c0.31-0.55,0.74-0.97,1.29-1.26c0.55-0.29,1.12-0.44,1.71-0.44c0.14,0,0.24,0,0.31,0.01c-0.01,0.09-0.02,0.21-0.02,0.36
 	c0,0.94,0.26,1.85,0.79,2.71c0.52,0.86,1.25,1.51,2.17,1.94c-0.16,0.38-0.41,0.72-0.75,1.03c-0.89-0.76-1.94-1.14-3.16-1.14h-0.33
 	C20.48,10.71,19.81,9.64,18.73,8.76z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltCloudyGusts.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltCloudyGusts.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltCloudyGusts

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayHaze = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.37,15.62c0-0.24,0.08-0.44,0.25-0.61c0.18-0.17,0.38-0.25,0.6-0.25h2.04c0.23,0,0.42,0.08,0.58,0.25
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.37,15.62c0-0.24,0.08-0.44,0.25-0.61c0.18-0.17,0.38-0.25,0.6-0.25h2.04c0.23,0,0.42,0.08,0.58,0.25
 	c0.15,0.17,0.23,0.37,0.23,0.61c0,0.24-0.08,0.44-0.23,0.6c-0.15,0.17-0.35,0.25-0.58,0.25H5.23c-0.23,0-0.43-0.08-0.6-0.25
 	C4.46,16.05,4.37,15.85,4.37,15.62z M7.23,8.71c0-0.23,0.08-0.43,0.23-0.61c0.2-0.17,0.41-0.25,0.64-0.25
 	c0.21,0,0.41,0.08,0.59,0.25l1.43,1.46c0.16,0.15,0.24,0.35,0.24,0.59c0,0.24-0.08,0.44-0.24,0.6c-0.16,0.16-0.36,0.24-0.6,0.24
@@ -48,19 +48,19 @@ const DayHaze = props => {
 	c-0.23,0-0.41-0.08-0.56-0.24C19.74,10.59,19.66,10.39,19.66,10.15z M21.92,15.62c0-0.23,0.08-0.43,0.24-0.61
 	c0.17-0.17,0.36-0.25,0.57-0.25h2.02c0.23,0,0.43,0.09,0.6,0.26c0.17,0.17,0.26,0.37,0.26,0.6c0,0.23-0.09,0.43-0.26,0.6
 	c-0.17,0.17-0.37,0.25-0.6,0.25h-2.02c-0.23,0-0.43-0.08-0.58-0.25S21.92,15.86,21.92,15.62z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayHaze.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayHaze.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayHaze

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CloudUp = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.64,16.88c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.33
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.64,16.88c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.33
 	c0-0.12-0.06-0.19-0.17-0.19c-0.86-0.04-1.58-0.38-2.18-1.02s-0.9-1.39-0.9-2.25c0-0.82,0.28-1.54,0.84-2.16
 	c0.56-0.61,1.26-0.97,2.1-1.07h0.53c0.13,0,0.2-0.06,0.2-0.18l0.06-0.57c0.11-1.08,0.57-1.99,1.38-2.72s1.77-1.1,2.86-1.1
 	c1.08,0,2.03,0.37,2.85,1.1c0.82,0.73,1.28,1.64,1.39,2.72l0.08,0.57c0,0.12,0.06,0.18,0.18,0.18h1.61c0.89,0,1.66,0.32,2.31,0.96
@@ -33,19 +33,19 @@ const CloudUp = props => {
 	c0.16,0.17,0.35,0.25,0.59,0.25c0.23,0,0.43-0.08,0.6-0.25c0.17-0.17,0.25-0.37,0.25-0.61v-3.94l1.12,1.11
 	c0.4,0.31,0.81,0.31,1.22,0c0.16-0.15,0.24-0.36,0.24-0.62c0-0.24-0.08-0.44-0.24-0.62l-2.59-2.57c-0.16-0.16-0.36-0.24-0.6-0.24
 	c-0.24,0-0.44,0.08-0.59,0.24l-2.58,2.57C11.66,17.08,11.58,17.27,11.58,17.51z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 CloudUp.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 CloudUp.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default CloudUp

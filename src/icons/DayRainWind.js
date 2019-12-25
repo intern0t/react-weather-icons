@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayRainWind = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.48,16.91c0,1.12,0.33,2.13,1,3.01c0.67,0.88,1.53,1.47,2.58,1.77c0.09,0.01,0.17-0.01,0.24-0.08l1.17-1.41
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.48,16.91c0,1.12,0.33,2.13,1,3.01c0.67,0.88,1.53,1.47,2.58,1.77c0.09,0.01,0.17-0.01,0.24-0.08l1.17-1.41
 	c-0.89,0-1.66-0.32-2.3-0.97s-0.96-1.42-0.96-2.33c0-0.83,0.28-1.55,0.85-2.17c0.57-0.61,1.27-0.97,2.11-1.07l0.49-0.03
 	c0.13,0,0.2-0.06,0.2-0.19l0.07-0.54c0.11-1.08,0.57-1.99,1.38-2.72s1.77-1.1,2.86-1.1c1.1,0,2.06,0.37,2.88,1.1
 	s1.28,1.64,1.39,2.72l0.07,0.59c0.04,0.11,0.12,0.17,0.22,0.17h1.64c0.88,0,1.64,0.32,2.28,0.95c0.64,0.63,0.96,1.4,0.96,2.28
@@ -55,19 +55,19 @@ const DayRainWind = props => {
 	c0,0.24,0.08,0.44,0.24,0.6c0.16,0.18,0.36,0.27,0.6,0.27h2.04c0.24,0,0.44-0.09,0.61-0.26c0.17-0.17,0.25-0.38,0.25-0.61
 	c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.37-0.24-0.61-0.24h-2.04c-0.24,0-0.44,0.08-0.6,0.24C24.86,11.15,24.78,11.35,24.78,11.58
 	z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayRainWind.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayRainWind.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayRainWind

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayRainMix = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.48,16.95c0,1.32,0.46,2.46,1.37,3.4c0.91,0.94,2.04,1.45,3.38,1.51c0.12,0,0.18-0.06,0.18-0.17v-1.33
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.48,16.95c0,1.32,0.46,2.46,1.37,3.4c0.91,0.94,2.04,1.45,3.38,1.51c0.12,0,0.18-0.06,0.18-0.17v-1.33
 	c0-0.12-0.06-0.18-0.18-0.18c-0.86-0.04-1.58-0.38-2.17-1s-0.88-1.37-0.88-2.24c0-0.84,0.28-1.58,0.84-2.19
 	c0.56-0.62,1.26-0.96,2.1-1.03l0.53-0.08c0.11,0,0.16-0.05,0.16-0.14l0.08-0.55c0.12-1.09,0.59-2,1.38-2.72S10,9.16,11.1,9.16
 	s2.05,0.36,2.86,1.08c0.82,0.72,1.28,1.62,1.38,2.69l0.07,0.58c0.02,0.11,0.1,0.17,0.22,0.17h1.6c0.89,0,1.65,0.32,2.29,0.96
@@ -64,19 +64,19 @@ const DayRainMix = props => {
 	C23.27,17.51,23.18,17.71,23.18,17.94z M24.66,11.6c0,0.24,0.09,0.43,0.26,0.59c0.18,0.18,0.39,0.27,0.62,0.27h2.03
 	c0.23,0,0.43-0.08,0.59-0.25c0.16-0.17,0.24-0.37,0.24-0.61c0-0.24-0.08-0.44-0.24-0.6c-0.16-0.17-0.35-0.25-0.59-0.25h-2.03
 	c-0.24,0-0.44,0.08-0.62,0.25S24.66,11.37,24.66,11.6z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayRainMix.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayRainMix.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayRainMix

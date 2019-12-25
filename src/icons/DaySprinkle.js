@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DaySprinkle = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.58,16.89c0,0.87,0.21,1.68,0.64,2.42c0.42,0.75,1,1.35,1.73,1.8c0.73,0.45,1.53,0.69,2.4,0.73
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.58,16.89c0,0.87,0.21,1.68,0.64,2.42c0.42,0.75,1,1.35,1.73,1.8c0.73,0.45,1.53,0.69,2.4,0.73
 	c0.12,0,0.18-0.06,0.18-0.17v-1.33c0-0.12-0.06-0.19-0.18-0.19c-0.85-0.04-1.58-0.38-2.18-1.02s-0.9-1.38-0.9-2.25
 	c0-0.82,0.28-1.54,0.84-2.15s1.26-0.96,2.09-1.06l0.52-0.03c0.12,0,0.19-0.06,0.19-0.18l0.08-0.54c0.11-1.08,0.56-1.98,1.36-2.71
 	c0.8-0.73,1.75-1.09,2.85-1.09c1.07,0,2.02,0.36,2.84,1.09c0.82,0.73,1.28,1.63,1.4,2.7l0.07,0.58c0,0.11,0.06,0.17,0.17,0.17h1.62
@@ -48,19 +48,19 @@ const DaySprinkle = props => {
 	c-0.24,0-0.44,0.08-0.6,0.24S23.22,17.66,23.22,17.89z M24.67,11.6c0,0.22,0.08,0.42,0.25,0.58c0.17,0.16,0.38,0.24,0.63,0.24h2.02
 	c0.24,0,0.44-0.08,0.6-0.24c0.17-0.16,0.25-0.35,0.25-0.59c0-0.24-0.08-0.44-0.25-0.6s-0.37-0.25-0.6-0.25h-2.02
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DaySprinkle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DaySprinkle.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DaySprinkle

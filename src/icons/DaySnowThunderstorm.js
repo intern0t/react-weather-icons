@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DaySnowThunderstorm = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.49,16.88c0,1.12,0.33,2.12,1,3s1.53,1.47,2.58,1.76l-0.66,1.7c-0.05,0.14,0,0.22,0.14,0.22h2.13l-1.43,4.21h0.29
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.49,16.88c0,1.12,0.33,2.12,1,3s1.53,1.47,2.58,1.76l-0.66,1.7c-0.05,0.14,0,0.22,0.14,0.22h2.13l-1.43,4.21h0.29
 	l4.36-5.66c0.04-0.04,0.04-0.09,0.02-0.14C9.9,21.92,9.85,21.9,9.78,21.9H7.59l2.49-4.65c0.07-0.14,0.03-0.22-0.14-0.22H6.98
 	c-0.09,0-0.17,0.05-0.23,0.15l-1.07,2.88C4.96,19.88,4.36,19.5,3.9,18.9c-0.47-0.59-0.7-1.26-0.7-2.02c0-0.84,0.28-1.57,0.84-2.18
 	c0.56-0.61,1.27-0.97,2.11-1.07l0.51-0.03c0.12,0,0.19-0.05,0.22-0.14l0.07-0.59c0.11-1.08,0.56-1.99,1.37-2.72s1.76-1.1,2.86-1.1
@@ -52,19 +52,19 @@ const DaySnowThunderstorm = props => {
 	C23.35,17.51,23.26,17.72,23.26,17.95z M24.73,11.58c0,0.24,0.09,0.44,0.26,0.59c0.16,0.18,0.36,0.26,0.6,0.26h2.06
 	c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6s-0.08-0.44-0.25-0.6c-0.17-0.16-0.37-0.24-0.61-0.24h-2.06
 	c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DaySnowThunderstorm.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DaySnowThunderstorm.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DaySnowThunderstorm

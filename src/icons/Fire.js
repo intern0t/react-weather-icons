@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Fire = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M7.38,21.83c0-0.3,0.1-0.55,0.29-0.76c0.19-0.21,0.43-0.31,0.7-0.31v-0.02l13.16,0.04c0.06-0.01,0.1-0.02,0.1-0.02
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M7.38,21.83c0-0.3,0.1-0.55,0.29-0.76c0.19-0.21,0.43-0.31,0.7-0.31v-0.02l13.16,0.04c0.06-0.01,0.1-0.02,0.1-0.02
 	c0.27,0.01,0.51,0.12,0.7,0.33c0.19,0.21,0.29,0.47,0.28,0.77c0,0.3-0.1,0.55-0.29,0.76c-0.19,0.21-0.43,0.31-0.7,0.31v0.01
 	L8.59,22.9c-0.1,0.01-0.17,0.02-0.22,0.02c-0.28-0.01-0.51-0.11-0.7-0.32C7.47,22.39,7.37,22.13,7.38,21.83z M8.2,16.37
 	c-0.01-0.43,0.04-0.93,0.16-1.52c0.06-0.3,0.2-0.76,0.44-1.37c0.02-0.05,0.07-0.14,0.13-0.28c0.01,0.02,0.03,0.03,0.04,0.05
@@ -37,19 +37,19 @@ const Fire = props => {
 	c-0.08,0.24-0.16,0.43-0.22,0.58c-0.19,0.38-0.39,0.71-0.62,0.98c-0.06,0.07-0.11,0.13-0.14,0.16H9.67
 	c-0.01-0.01-0.03-0.03-0.07-0.06s-0.06-0.05-0.08-0.07C9.26,18.98,8.98,18.6,8.7,18.1c-0.08-0.15-0.18-0.38-0.29-0.69
 	C8.29,17.1,8.22,16.75,8.2,16.37z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Fire.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Fire.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Fire

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayHail = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.48,16.88c0,1.34,0.47,2.49,1.4,3.45s2.07,1.47,3.4,1.53c0.12,0,0.18-0.06,0.18-0.17v-1.34c0-0.12-0.06-0.18-0.18-0.18
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.48,16.88c0,1.34,0.47,2.49,1.4,3.45s2.07,1.47,3.4,1.53c0.12,0,0.18-0.06,0.18-0.17v-1.34c0-0.12-0.06-0.18-0.18-0.18
 	c-0.86-0.04-1.59-0.39-2.19-1.03s-0.9-1.4-0.9-2.26c0-0.83,0.28-1.55,0.85-2.17s1.27-0.97,2.1-1.07l0.53-0.04
 	c0.13,0,0.2-0.06,0.2-0.18l0.07-0.55c0.11-1.08,0.56-1.99,1.37-2.71c0.81-0.73,1.76-1.09,2.86-1.09c1.09,0,2.04,0.36,2.86,1.09
 	c0.82,0.73,1.29,1.63,1.4,2.71l0.07,0.58c0,0.12,0.06,0.19,0.17,0.19h1.62c0.89,0,1.67,0.32,2.32,0.96c0.65,0.64,0.98,1.4,0.98,2.27
@@ -57,19 +57,19 @@ const DayHail = props => {
 	s-0.43,0.08-0.6,0.25C23.36,17.48,23.28,17.69,23.28,17.92z M24.74,11.55c0,0.24,0.09,0.44,0.26,0.6c0.18,0.18,0.38,0.26,0.62,0.26
 	h2.03c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.26-0.37,0.26-0.61c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.38-0.24-0.62-0.24h-2.03
 	c-0.25,0-0.46,0.08-0.63,0.24C24.83,11.12,24.74,11.32,24.74,11.55z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayHail.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayHail.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayHail

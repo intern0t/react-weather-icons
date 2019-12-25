@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightCloudyWindy = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M2.43,21c0,0.25,0.09,0.45,0.27,0.6c0.17,0.17,0.37,0.26,0.61,0.26h9.54c0.23,0,0.43-0.08,0.59-0.25
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M2.43,21c0,0.25,0.09,0.45,0.27,0.6c0.17,0.17,0.37,0.26,0.61,0.26h9.54c0.23,0,0.43-0.08,0.59-0.25
 	c0.16-0.17,0.24-0.37,0.24-0.61s-0.08-0.44-0.24-0.61c-0.16-0.17-0.35-0.25-0.59-0.25H3.31c-0.24,0-0.44,0.09-0.62,0.26
 	C2.52,20.57,2.43,20.77,2.43,21z M5.07,17.97c0,0.23,0.09,0.42,0.27,0.58c0.16,0.16,0.36,0.24,0.6,0.24h9.55
 	c0.24,0,0.43-0.08,0.59-0.23c0.16-0.16,0.23-0.35,0.23-0.59c0-0.24-0.08-0.44-0.24-0.6c-0.16-0.17-0.35-0.25-0.59-0.25H5.94
@@ -37,19 +37,19 @@ const NightCloudyWindy = props => {
 	s-0.08-0.44-0.25-0.61c-0.17-0.17-0.37-0.25-0.6-0.25H7.69c-0.23,0-0.43,0.09-0.6,0.26C6.92,23.66,6.83,23.86,6.83,24.09z
 	 M19.83,9.02c0.67-0.65,1.5-0.98,2.47-0.98c0.99,0,1.83,0.35,2.52,1.04c0.69,0.69,1.04,1.53,1.04,2.52c0,0.63-0.16,1.22-0.49,1.77
 	c-0.98-0.96-2.15-1.43-3.52-1.43h-0.32C21.3,10.84,20.73,9.87,19.83,9.02z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightCloudyWindy.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightCloudyWindy.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightCloudyWindy
