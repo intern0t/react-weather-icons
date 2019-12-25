@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const RainMix = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.65,16.96c0,1.32,0.47,2.46,1.4,3.41c0.93,0.96,2.06,1.46,3.38,1.5c0.12,0,0.18-0.06,0.18-0.17v-1.33
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.65,16.96c0,1.32,0.47,2.46,1.4,3.41c0.93,0.96,2.06,1.46,3.38,1.5c0.12,0,0.18-0.06,0.18-0.17v-1.33
 	c0-0.12-0.06-0.18-0.18-0.18c-0.84-0.04-1.57-0.38-2.17-1.02s-0.91-1.37-0.91-2.22c0-0.84,0.28-1.57,0.85-2.19
 	c0.57-0.62,1.26-0.97,2.1-1.04l0.53-0.07c0.12,0,0.19-0.06,0.19-0.18l0.07-0.5c0.1-1.09,0.55-2.01,1.36-2.75s1.76-1.11,2.86-1.11
 	c1.08,0,2.03,0.37,2.84,1.1c0.81,0.73,1.28,1.63,1.4,2.71l0.07,0.58c0,0.12,0.06,0.18,0.19,0.18h1.6c0.9,0,1.67,0.32,2.32,0.97
@@ -52,19 +52,19 @@ const RainMix = props => {
 	c0.1,0,0.22-0.03,0.36-0.09c0.21-0.11,0.35-0.29,0.41-0.52l0.24-0.9c0.06-0.23,0.04-0.44-0.08-0.63c-0.11-0.2-0.28-0.33-0.51-0.4
 	c-0.23-0.07-0.44-0.05-0.64,0.06c-0.19,0.11-0.33,0.27-0.39,0.51l-0.28,0.91c0,0.02-0.01,0.06-0.02,0.12
 	C18.1,18.74,18.1,18.78,18.1,18.81z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 RainMix.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 RainMix.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default RainMix

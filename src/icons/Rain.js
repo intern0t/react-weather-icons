@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Rain = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.64,16.91c0-1.15,0.36-2.17,1.08-3.07c0.72-0.9,1.63-1.47,2.73-1.73c0.31-1.36,1.02-2.48,2.11-3.36s2.34-1.31,3.75-1.31
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.64,16.91c0-1.15,0.36-2.17,1.08-3.07c0.72-0.9,1.63-1.47,2.73-1.73c0.31-1.36,1.02-2.48,2.11-3.36s2.34-1.31,3.75-1.31
 	c1.38,0,2.6,0.43,3.68,1.28c1.08,0.85,1.78,1.95,2.1,3.29h0.32c0.89,0,1.72,0.22,2.48,0.65s1.37,1.03,1.81,1.78
 	c0.44,0.75,0.67,1.58,0.67,2.47c0,0.88-0.21,1.69-0.63,2.44c-0.42,0.75-1,1.35-1.73,1.8c-0.73,0.45-1.53,0.69-2.4,0.71
 	c-0.13,0-0.2-0.06-0.2-0.17v-1.33c0-0.12,0.07-0.18,0.2-0.18c0.85-0.04,1.58-0.38,2.18-1.02s0.9-1.39,0.9-2.26s-0.33-1.62-0.98-2.26
@@ -38,19 +38,19 @@ const Rain = props => {
 	c0.08,0,0.17,0.01,0.26,0.03c0.21,0.06,0.36,0.16,0.46,0.31c0.1,0.15,0.15,0.31,0.15,0.47c0,0.03-0.01,0.08-0.02,0.14
 	s-0.02,0.1-0.02,0.12l-1.63,5.73c-0.04,0.19-0.13,0.35-0.28,0.46s-0.32,0.17-0.51,0.17l-0.24-0.05c-0.2-0.06-0.35-0.16-0.46-0.32
 	C16.79,23.94,16.74,23.78,16.74,23.62z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Rain.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Rain.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Rain

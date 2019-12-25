@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayLightning = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.56,16.9c0,1.33,0.46,2.47,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.37
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.56,16.9c0,1.33,0.46,2.47,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.53c0.11,0,0.17-0.06,0.17-0.17v-1.37
 	c0-0.12-0.06-0.18-0.17-0.18c-0.87-0.07-1.6-0.41-2.19-1.04c-0.59-0.62-0.89-1.36-0.89-2.21c0-0.84,0.28-1.57,0.85-2.19
 	s1.26-0.97,2.1-1.04l0.52-0.08c0.13,0,0.2-0.06,0.2-0.17l0.06-0.51c0.11-1.08,0.56-1.99,1.37-2.71c0.81-0.73,1.76-1.09,2.86-1.09
 	c1.09,0,2.04,0.36,2.85,1.09c0.81,0.72,1.27,1.63,1.39,2.72l0.07,0.58c0,0.11,0.06,0.17,0.19,0.17h1.6c0.91,0,1.68,0.32,2.32,0.95
@@ -44,19 +44,19 @@ const DayLightning = props => {
 	C23.31,17.44,23.23,17.64,23.23,17.87z M24.68,11.56c0,0.22,0.09,0.41,0.26,0.57c0.17,0.17,0.37,0.25,0.6,0.25h2.04
 	c0.24,0,0.44-0.08,0.61-0.24c0.17-0.16,0.25-0.35,0.25-0.59c0-0.24-0.09-0.44-0.26-0.61s-0.37-0.25-0.6-0.25h-2.04
 	c-0.23,0-0.43,0.08-0.6,0.25C24.77,11.12,24.68,11.32,24.68,11.56z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayLightning.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayLightning.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayLightning

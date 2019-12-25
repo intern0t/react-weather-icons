@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const SnowflakeCold = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M7.46,14.41c0-0.19,0.07-0.36,0.2-0.5c0.13-0.14,0.29-0.21,0.48-0.21c0.19,0,0.36,0.07,0.49,0.21c0.13,0.14,0.2,0.3,0.2,0.5
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M7.46,14.41c0-0.19,0.07-0.36,0.2-0.5c0.13-0.14,0.29-0.21,0.48-0.21c0.19,0,0.36,0.07,0.49,0.21c0.13,0.14,0.2,0.3,0.2,0.5
 	c0,0.19-0.07,0.35-0.2,0.48c-0.13,0.13-0.3,0.2-0.48,0.2s-0.35-0.07-0.48-0.2C7.52,14.75,7.46,14.59,7.46,14.41z M9.44,14.41
 	c0-0.19,0.07-0.36,0.2-0.5c0.13-0.14,0.29-0.21,0.48-0.21h3.23l-2.28-2.28c-0.14-0.12-0.21-0.28-0.21-0.47
 	c0-0.19,0.07-0.35,0.21-0.49c0.14-0.14,0.3-0.21,0.49-0.21s0.35,0.07,0.49,0.21l2.27,2.27V9.52c0-0.19,0.07-0.36,0.21-0.5
@@ -45,19 +45,19 @@ const SnowflakeCold = props => {
 	s-0.07,0.35-0.21,0.49c-0.14,0.14-0.3,0.21-0.49,0.21c-0.19,0-0.35-0.07-0.47-0.21C19.24,9.89,19.17,9.72,19.17,9.54z M21.17,14.41
 	c0-0.19,0.07-0.36,0.2-0.5c0.13-0.14,0.3-0.21,0.49-0.21c0.18,0,0.34,0.07,0.47,0.21c0.13,0.14,0.2,0.3,0.2,0.5
 	c0,0.18-0.07,0.34-0.2,0.47c-0.13,0.13-0.29,0.2-0.47,0.2c-0.19,0-0.36-0.07-0.49-0.2C21.24,14.75,21.17,14.59,21.17,14.41z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 SnowflakeCold.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 SnowflakeCold.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default SnowflakeCold

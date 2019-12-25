@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltSprinkle = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.11,16.89c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.54c0.12,0,0.18-0.06,0.18-0.18v-1.33
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.11,16.89c0,1.33,0.46,2.48,1.39,3.43c0.93,0.96,2.06,1.47,3.4,1.54c0.12,0,0.18-0.06,0.18-0.18v-1.33
 	c0-0.12-0.06-0.18-0.18-0.18c-0.86-0.04-1.58-0.38-2.18-1.02c-0.6-0.64-0.9-1.39-0.9-2.26c0-0.83,0.28-1.55,0.84-2.17
 	c0.56-0.61,1.26-0.97,2.1-1.07l0.52-0.04c0.13,0,0.2-0.06,0.2-0.18l0.07-0.54c0.11-1.08,0.56-1.99,1.37-2.71
 	c0.81-0.73,1.76-1.09,2.85-1.09c1.09,0,2.04,0.37,2.86,1.1c0.82,0.73,1.28,1.63,1.4,2.71l0.07,0.57c0,0.12,0.06,0.19,0.18,0.19h1.62
@@ -41,19 +41,19 @@ const NightAltSprinkle = props => {
 	C14.58,14.71,14.51,14.93,14.51,15.09z M17.56,8.77c0.35-0.57,0.8-1,1.34-1.29c0.54-0.29,1.12-0.44,1.72-0.44
 	c0.12,0,0.21,0.01,0.27,0.02v0.3c0,0.96,0.26,1.87,0.79,2.74s1.25,1.52,2.18,1.97c-0.16,0.38-0.41,0.72-0.75,1.03
 	c-0.93-0.76-1.99-1.14-3.21-1.14h-0.33C19.27,10.65,18.6,9.59,17.56,8.77z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltSprinkle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltSprinkle.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltSprinkle

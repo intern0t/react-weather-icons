@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayWindy = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.48,21.1c0,0.24,0.09,0.44,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25h5.88c0.26,0,0.48,0.09,0.68,0.28
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.48,21.1c0,0.24,0.09,0.44,0.27,0.6c0.17,0.17,0.37,0.25,0.61,0.25h5.88c0.26,0,0.48,0.09,0.68,0.28
 	c0.2,0.19,0.3,0.42,0.3,0.68s-0.1,0.5-0.3,0.69c-0.2,0.19-0.42,0.29-0.68,0.29c-0.26,0-0.48-0.1-0.68-0.3
 	c-0.18-0.16-0.38-0.24-0.61-0.24c-0.24,0-0.44,0.08-0.6,0.24c-0.16,0.16-0.24,0.36-0.24,0.6c0,0.24,0.08,0.44,0.24,0.6
 	c0.53,0.53,1.16,0.8,1.89,0.8c0.74,0,1.37-0.26,1.88-0.78s0.78-1.15,0.78-1.89s-0.26-1.37-0.78-1.89c-0.52-0.52-1.15-0.78-1.88-0.78
@@ -51,19 +51,19 @@ const DayWindy = props => {
 	c0-0.24,0.08-0.44,0.24-0.62c0.16-0.16,0.35-0.24,0.57-0.24h2.02c0.23,0,0.43,0.09,0.61,0.26s0.26,0.37,0.26,0.6
 	c0,0.23-0.09,0.43-0.26,0.6c-0.18,0.17-0.38,0.25-0.61,0.25h-2.02c-0.23,0-0.42-0.08-0.58-0.25C24.89,11.99,24.82,11.79,24.82,11.55
 	z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayWindy.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayWindy.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayWindy

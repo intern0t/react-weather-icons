@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const RainWind = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.63,16.93c0,1.12,0.33,2.11,0.98,2.99c0.65,0.87,1.5,1.47,2.55,1.79c0.09,0.02,0.17-0.01,0.24-0.08l1.16-1.43
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.63,16.93c0,1.12,0.33,2.11,0.98,2.99c0.65,0.87,1.5,1.47,2.55,1.79c0.09,0.02,0.17-0.01,0.24-0.08l1.16-1.43
 	c-0.89,0-1.65-0.32-2.28-0.96c-0.63-0.64-0.95-1.41-0.95-2.31c0-0.84,0.28-1.58,0.84-2.2s1.26-0.97,2.1-1.04l0.53-0.07
 	c0.11,0,0.16-0.04,0.16-0.13l0.08-0.55c0.12-1.1,0.59-2.01,1.39-2.73s1.75-1.08,2.85-1.08c1.1,0,2.06,0.36,2.87,1.09
 	c0.82,0.73,1.27,1.64,1.37,2.72l0.07,0.58c0.02,0.11,0.1,0.17,0.22,0.17h1.62c0.9,0,1.67,0.32,2.3,0.95s0.95,1.39,0.95,2.29
@@ -43,19 +43,19 @@ const RainWind = props => {
 	c0.14,0.04,0.24,0.06,0.31,0.06c0.14,0,0.26-0.03,0.34-0.08c0.22-0.09,0.38-0.23,0.46-0.42c0.1-0.17,0.11-0.39,0.02-0.67
 	c-0.08-0.21-0.23-0.35-0.44-0.44l-0.36-0.09c-0.09,0.02-0.19,0.04-0.32,0.07c-0.22,0.08-0.37,0.23-0.45,0.44
 	C15.84,25.8,15.81,25.92,15.81,26.03z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 RainWind.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 RainWind.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default RainWind

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightAltRain = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.07,16.9c0,1.33,0.47,2.48,1.4,3.44s2.07,1.47,3.4,1.53c0.12,0,0.18-0.06,0.18-0.17v-1.34c0-0.11-0.06-0.17-0.18-0.17
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.07,16.9c0,1.33,0.47,2.48,1.4,3.44s2.07,1.47,3.4,1.53c0.12,0,0.18-0.06,0.18-0.17v-1.34c0-0.11-0.06-0.17-0.18-0.17
 	c-0.86-0.05-1.59-0.39-2.19-1.03c-0.6-0.64-0.9-1.39-0.9-2.26c0-0.83,0.28-1.55,0.85-2.17c0.57-0.62,1.27-0.97,2.1-1.07l0.53-0.04
 	c0.13,0,0.2-0.06,0.2-0.17l0.07-0.54c0.11-1.08,0.57-1.99,1.38-2.72c0.81-0.73,1.77-1.1,2.86-1.1c1.09,0,2.04,0.37,2.86,1.1
 	c0.82,0.73,1.28,1.64,1.4,2.72l0.08,0.57c0,0.12,0.06,0.18,0.17,0.18h1.62c0.89,0,1.67,0.32,2.32,0.96c0.65,0.64,0.98,1.4,0.98,2.28
@@ -42,19 +42,19 @@ const NightAltRain = props => {
 	C16.42,23.7,16.4,23.8,16.4,23.82z M17.58,8.77c0.32-0.58,0.75-1.02,1.31-1.33c0.55-0.3,1.14-0.45,1.76-0.44
 	c0.12,0,0.21,0,0.27,0.01v0.3c-0.01,0.97,0.24,1.88,0.77,2.75c0.52,0.86,1.26,1.52,2.21,1.97c-0.22,0.46-0.49,0.81-0.79,1.07
 	c-0.92-0.76-1.99-1.13-3.23-1.13h-0.31C19.3,10.7,18.64,9.64,17.58,8.77z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightAltRain.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightAltRain.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightAltRain

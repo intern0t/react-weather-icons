@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const DayThunderstorm = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M1.52,16.9c0,1.11,0.33,2.09,0.98,2.96s1.51,1.46,2.57,1.78l-0.64,1.7c-0.04,0.14,0,0.21,0.14,0.21H6.7L5.45,27.5h0.29
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M1.52,16.9c0,1.11,0.33,2.09,0.98,2.96s1.51,1.46,2.57,1.78l-0.64,1.7c-0.04,0.14,0,0.21,0.14,0.21H6.7L5.45,27.5h0.29
 	l4.17-5.39c0.04-0.04,0.04-0.09,0.01-0.14C9.9,21.92,9.85,21.9,9.78,21.9H7.61l2.47-4.63c0.07-0.14,0.02-0.22-0.14-0.22H7
 	c-0.09,0-0.17,0.05-0.23,0.14L5.7,20.07c-0.71-0.18-1.3-0.57-1.77-1.16c-0.47-0.59-0.7-1.26-0.7-2.01c0-0.83,0.28-1.55,0.85-2.17
 	s1.27-0.97,2.1-1.07L6.7,13.6c0.13,0,0.2-0.06,0.2-0.18l0.06-0.51c0.11-1.08,0.57-1.99,1.38-2.72c0.81-0.73,1.77-1.1,2.86-1.1
@@ -49,19 +49,19 @@ const DayThunderstorm = props => {
 	c0,0.23,0.09,0.43,0.27,0.6c0.18,0.18,0.38,0.27,0.61,0.27h2.03c0.23,0,0.43-0.09,0.6-0.26s0.26-0.38,0.26-0.61
 	c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.37-0.24-0.61-0.24h-2.03c-0.25,0-0.46,0.08-0.63,0.24C24.78,11.15,24.7,11.35,24.7,11.58z
 	"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 DayThunderstorm.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 DayThunderstorm.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default DayThunderstorm

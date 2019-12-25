@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Meteor = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M7.09,19.39c0-0.13,0-0.23,0.01-0.29v-0.08c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05s0-0.03,0-0.05c0-0.02,0-0.03,0-0.04
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M7.09,19.39c0-0.13,0-0.23,0.01-0.29v-0.08c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05s0-0.03,0-0.05c0-0.02,0-0.03,0-0.04
 	v-0.02c0-0.03,0.01-0.07,0.02-0.12c0.01-0.05,0.02-0.08,0.02-0.09v-0.03c0-0.01,0-0.03,0-0.05c0-0.02,0-0.03,0-0.04l0.08-0.37
 	c0-0.01,0-0.01,0.01-0.02v-0.02l0.04-0.14c0.01-0.01,0.01-0.01,0.01-0.02c0.01-0.01,0.01-0.02,0.01-0.03v-0.03
 	c0.04-0.12,0.07-0.22,0.1-0.28c0-0.01,0.01-0.02,0.02-0.03c0.01-0.01,0.02-0.06,0.05-0.15c0.17-0.38,0.38-0.74,0.63-1.08l0.06-0.07
@@ -32,19 +32,19 @@ const Meteor = props => {
 	S7.09,20.31,7.09,19.39z M8.29,19.39c0,1.08,0.38,1.99,1.14,2.75c0.76,0.76,1.68,1.14,2.75,1.14c0.82,0,1.56-0.24,2.22-0.71
 	c0.66-0.47,1.13-1.09,1.41-1.84c0.17-0.43,0.25-0.87,0.25-1.34c0-1.07-0.38-1.99-1.13-2.75c-0.76-0.76-1.67-1.13-2.75-1.13
 	c-1,0-1.87,0.33-2.6,1c-0.41,0.36-0.72,0.78-0.95,1.28C8.4,18.3,8.29,18.83,8.29,19.39z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Meteor.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Meteor.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Meteor

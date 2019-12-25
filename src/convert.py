@@ -36,7 +36,7 @@ def readAndParseContent(svgfilepath):
             with open('exports', 'a+') as f:
                 f.write("export { default as " + NAME + " } from \"./icons/" + NAME + "\"\n")
             with open('usage', 'a+') as f:
-                f.write('<Icon.' + NAME + ' color={color} size={size} />\n')
+                f.write('<div className="icon-wrapper"><Icon.' + NAME + ' color={color} size={size} /><span className="icon-name">' + NAME + '</span></div>\n')
             generateFile('icons/' + NAME + ".js", contentPads.replace("--NAME--", basetitle.replace(' ', '')[:-3]).replace("--SVG--", svgfileContent))
 
 files = glob.glob('_icons/*.svg')

@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Tornado = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.13,15.19c0,0.69,0.36,1.28,1.08,1.77c1.32,0.93,3.31,1.39,5.98,1.39c1.2,0,2.31-0.1,3.34-0.31
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.13,15.19c0,0.69,0.36,1.28,1.08,1.77c1.32,0.93,3.31,1.39,5.98,1.39c1.2,0,2.31-0.1,3.34-0.31
 	c1.08-0.23,1.97-0.6,2.65-1.1s1.03-1.08,1.03-1.76c0-0.21-0.04-0.41-0.12-0.62c1.39-0.34,2.48-0.8,3.27-1.38s1.19-1.25,1.19-2
 	c0-0.19-0.03-0.39-0.09-0.6c2.29-0.81,3.43-1.9,3.43-3.28c0-0.88-0.5-1.66-1.49-2.34c-1.95-1.3-4.81-1.95-8.58-1.95
 	c-1.78,0-3.39,0.16-4.83,0.47C9.42,3.8,8.16,4.3,7.2,4.98S5.76,6.44,5.76,7.31c0,0.52,0.16,0.99,0.48,1.42
@@ -40,19 +40,19 @@ const Tornado = props => {
 	C8.43,6.3,9.33,5.9,10.66,5.51c1.43-0.42,3.14-0.63,5.14-0.63c2.01,0,3.74,0.21,5.19,0.63c1.35,0.39,2.24,0.8,2.68,1.22
 	c0.22,0.22,0.34,0.42,0.34,0.59s-0.11,0.35-0.34,0.56c-0.44,0.42-1.33,0.83-2.68,1.23c-1.45,0.42-3.17,0.63-5.19,0.63
 	c-2,0-3.72-0.21-5.14-0.63C9.32,8.71,8.42,8.3,7.98,7.87C7.75,7.66,7.63,7.48,7.63,7.31z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Tornado.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Tornado.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Tornado

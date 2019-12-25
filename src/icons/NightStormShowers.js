@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightStormShowers = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.25,16.86c0,1.1,0.33,2.09,1,2.98c0.67,0.88,1.52,1.48,2.57,1.8l-0.65,1.66c-0.04,0.14,0,0.21,0.14,0.21h2.12l-1.14,4.09
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.25,16.86c0,1.1,0.33,2.09,1,2.98c0.67,0.88,1.52,1.48,2.57,1.8l-0.65,1.66c-0.04,0.14,0,0.21,0.14,0.21h2.12l-1.14,4.09
 	h0.29l4.08-5.49c0.04-0.04,0.04-0.09,0.01-0.14c-0.03-0.05-0.08-0.07-0.15-0.07h-2.17l2.47-4.67c0.07-0.14,0.03-0.22-0.13-0.22H9.73
 	c-0.09,0-0.16,0.05-0.19,0.14l-1.11,2.93c-0.71-0.18-1.3-0.57-1.78-1.17c-0.47-0.6-0.71-1.27-0.71-2.02c0-0.84,0.28-1.57,0.85-2.19
 	s1.27-0.97,2.1-1.05l0.52-0.07c0.13,0,0.2-0.06,0.2-0.17l0.07-0.52c0.11-1.09,0.56-2,1.37-2.72c0.81-0.73,1.76-1.09,2.86-1.09
@@ -43,19 +43,19 @@ const NightStormShowers = props => {
 	c-0.12-0.2-0.3-0.34-0.53-0.41c-0.23-0.07-0.44-0.05-0.64,0.07s-0.33,0.29-0.4,0.53l-0.28,1.02C17.96,18.7,17.95,18.77,17.95,18.83z
 	 M18.06,8.98c0.66-0.64,1.48-0.96,2.45-0.96c0.98,0,1.82,0.35,2.5,1.04c0.69,0.69,1.03,1.53,1.03,2.51c0,0.63-0.16,1.22-0.49,1.78
 	c-0.99-0.96-2.15-1.44-3.49-1.44h-0.32C19.44,10.75,18.88,9.77,18.06,8.98z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightStormShowers.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightStormShowers.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightStormShowers

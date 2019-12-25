@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NightRainMix = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.19,16.91c0,0.87,0.21,1.68,0.64,2.43c0.42,0.75,1.01,1.35,1.74,1.8C7.3,21.6,8.11,21.84,9,21.86
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.19,16.91c0,0.87,0.21,1.68,0.64,2.43c0.42,0.75,1.01,1.35,1.74,1.8C7.3,21.6,8.11,21.84,9,21.86
 	c0.12,0,0.19-0.06,0.19-0.17v-1.34c0-0.12-0.06-0.18-0.19-0.18c-0.86-0.04-1.59-0.39-2.19-1.03s-0.91-1.39-0.91-2.24
 	c0-0.85,0.28-1.59,0.85-2.21c0.57-0.62,1.27-0.97,2.11-1.04l0.52-0.07c0.13,0,0.2-0.06,0.2-0.17l0.07-0.52
 	c0.11-1.1,0.57-2.02,1.38-2.76s1.77-1.11,2.87-1.11c1.09,0,2.04,0.37,2.86,1.1c0.82,0.73,1.28,1.65,1.4,2.73l0.08,0.58
@@ -56,19 +56,19 @@ const NightRainMix = props => {
 	C17.57,18.74,17.56,18.78,17.56,18.81z M18.03,9.01c0.69-0.69,1.53-1.04,2.51-1.04c0.98,0,1.82,0.35,2.51,1.05
 	c0.69,0.7,1.04,1.54,1.04,2.52c0,0.67-0.17,1.28-0.51,1.85c-0.96-0.96-2.14-1.44-3.54-1.44h-0.32C19.44,10.77,18.88,9.79,18.03,9.01
 	z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 NightRainMix.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 NightRainMix.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default NightRainMix

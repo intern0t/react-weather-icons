@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Flood = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M6.72,20.76c0-0.05,0.01-0.12,0.02-0.21v-4.76c0.28,0.49,0.66,0.89,1.15,1.19c0.49,0.3,1.03,0.45,1.61,0.45
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M6.72,20.76c0-0.05,0.01-0.12,0.02-0.21v-4.76c0.28,0.49,0.66,0.89,1.15,1.19c0.49,0.3,1.03,0.45,1.61,0.45
 	c0.59,0,1.13-0.15,1.62-0.45c0.49-0.3,0.87-0.69,1.15-1.19c0.27,0.49,0.66,0.89,1.15,1.19c0.49,0.3,1.03,0.45,1.62,0.45
 	c0.58,0,1.12-0.15,1.61-0.45c0.49-0.3,0.87-0.69,1.15-1.19c0.28,0.49,0.67,0.89,1.15,1.19c0.49,0.3,1.02,0.45,1.6,0.45
 	c0.58,0,1.12-0.15,1.61-0.45c0.49-0.3,0.88-0.69,1.15-1.19v4.81c0,0.02,0,0.05,0,0.08c0,0.03,0,0.06,0,0.08c0,0.01,0,0.04,0,0.07
@@ -37,19 +37,19 @@ const Flood = props => {
 	c-0.16,0-0.3-0.06-0.41-0.18l-1.23-1.22v6.9c0,0.16-0.06,0.29-0.17,0.4c-0.11,0.11-0.25,0.17-0.41,0.17c-0.16,0-0.3-0.06-0.42-0.17
 	c-0.12-0.11-0.17-0.25-0.17-0.4v-6.9l-1.22,1.22c-0.12,0.12-0.26,0.18-0.42,0.18c-0.16,0-0.3-0.06-0.41-0.18
 	C12.29,9.97,12.23,9.83,12.23,9.67z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Flood.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Flood.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Flood

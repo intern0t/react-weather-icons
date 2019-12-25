@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CloudRefresh = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.63,16.91c0,0.66,0.12,1.28,0.38,1.88c0.25,0.6,0.59,1.11,1.02,1.55c0.43,0.43,0.94,0.79,1.53,1.05
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.63,16.91c0,0.66,0.12,1.28,0.38,1.88c0.25,0.6,0.59,1.11,1.02,1.55c0.43,0.43,0.94,0.79,1.53,1.05
 	c0.59,0.27,1.21,0.42,1.87,0.45c0.11,0,0.17-0.06,0.17-0.17v-1.33c0-0.12-0.06-0.19-0.17-0.19c-0.87-0.06-1.6-0.41-2.19-1.03
 	s-0.89-1.36-0.89-2.21c0-0.84,0.28-1.57,0.85-2.19c0.57-0.62,1.26-0.97,2.1-1.04l0.52-0.07c0.13,0,0.2-0.06,0.2-0.17l0.07-0.52
 	c0.07-0.71,0.3-1.36,0.69-1.95c0.39-0.58,0.9-1.04,1.52-1.37s1.29-0.49,2.01-0.49c1.09,0,2.05,0.36,2.86,1.08
@@ -36,19 +36,19 @@ const CloudRefresh = props => {
 	c0.14,0.15,0.31,0.23,0.53,0.23c0.22,0.01,0.45-0.07,0.7-0.23l1.82-1.87c0.17-0.17,0.25-0.36,0.25-0.58c0-0.25-0.08-0.45-0.25-0.61
 	l-1.82-1.83c-0.19-0.18-0.39-0.26-0.62-0.26c-0.23,0-0.43,0.08-0.59,0.25c-0.16,0.17-0.24,0.37-0.24,0.61
 	c0,0.24,0.07,0.43,0.23,0.58l0.35,0.36c-1,0.17-1.83,0.63-2.49,1.4C11.19,16.24,10.86,17.14,10.86,18.18z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 CloudRefresh.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 CloudRefresh.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default CloudRefresh

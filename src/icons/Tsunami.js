@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Tsunami = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M5.07,21.24c0-0.16,0.06-0.3,0.17-0.42c0.12-0.12,0.25-0.18,0.41-0.18h0.4c-0.21-0.66-0.39-1.35-0.53-2.07
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M5.07,21.24c0-0.16,0.06-0.3,0.17-0.42c0.12-0.12,0.25-0.18,0.41-0.18h0.4c-0.21-0.66-0.39-1.35-0.53-2.07
 	c-0.21-1.1-0.32-2.1-0.32-2.99c0-1.71,0.3-3.32,0.91-4.81C6.73,9.31,7.59,8.06,8.7,7.01c1.12-1.06,2.42-1.87,3.9-2.42
 	c1.51-0.57,3.14-0.86,4.91-0.86c1.06,0,2.06,0.09,3,0.28c0.94,0.22,1.85,0.56,2.73,1.03l1.7,0.91l-1.88,0.39
 	c-0.58,0.13-0.98,0.39-1.2,0.78c-0.16,0.32-0.15,0.69,0.03,1.11l0.41,0.95l-1.02,0.05c-0.43,0.03-0.83,0.12-1.18,0.27
@@ -41,19 +41,19 @@ const Tsunami = props => {
 	s0.37,0.09,0.45,0.12l0.08,0.03c0.05-0.31,0.13-0.59,0.24-0.84c0.16-0.29,0.37-0.56,0.64-0.8c-0.3-0.09-0.65-0.19-1.04-0.28
 	c-0.8-0.18-1.7-0.26-2.69-0.26c-1.58,0-3.05,0.26-4.42,0.77c-1.34,0.51-2.48,1.22-3.42,2.14c-0.98,0.91-1.73,2-2.23,3.26
 	C6.89,12.65,6.62,14.07,6.62,15.58z M18.05,20.64h3.88v-3.52l-1.98-1.21l-1.9,1.19V20.64z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Tsunami.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Tsunami.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Tsunami

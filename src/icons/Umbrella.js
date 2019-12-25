@@ -2,25 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Umbrella = props => {
-  const { color, size, ...mProps } = props
-  return (
-    <svg
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 30 30"
-      width={size}
-      height={size}
-      fill={color}
-      stroke="auto"
-      strokeWidth="auto"
-      {...mProps}
-      space="preserve"
-    >
-      <path
-        d="M4.64,14.65c0.01-0.34,0.18-0.86,0.5-1.58c0.32-0.72,0.76-1.48,1.33-2.3c1.86-2.61,4.49-3.98,7.88-4.13V6.21
+	const { color, size, ...mProps } = props
+	return (
+		<svg
+			version="1.1"
+			id="Layer_1"
+			xmlns="http://www.w3.org/2000/svg"
+			x="0px"
+			y="0px"
+			viewBox="0 0 30 30"
+			width={size}
+			height={size}
+			fill={color}
+			stroke="auto"
+			strokeWidth="auto"
+			{...mProps}
+			space="preserve"
+		>
+			<path
+				d="M4.64,14.65c0.01-0.34,0.18-0.86,0.5-1.58c0.32-0.72,0.76-1.48,1.33-2.3c1.86-2.61,4.49-3.98,7.88-4.13V6.21
 	c0-0.21,0.07-0.37,0.21-0.5c0.14-0.13,0.3-0.19,0.48-0.19c0.19,0,0.35,0.06,0.5,0.19c0.14,0.13,0.22,0.3,0.22,0.5v0.44
 	c0.98,0.04,1.9,0.19,2.75,0.45c0.85,0.26,1.59,0.59,2.22,1c0.63,0.41,1.17,0.83,1.61,1.27c0.45,0.43,0.85,0.9,1.2,1.41
 	c0.41,0.59,0.77,1.23,1.06,1.9c0.29,0.67,0.5,1.21,0.61,1.61c0.11,0.4,0.17,0.6,0.18,0.61v0.19c0,0.18-0.07,0.32-0.21,0.44
@@ -38,19 +38,19 @@ const Umbrella = props => {
 	h0.08c1.15,0,2.2,0.44,3.15,1.33c0.38-0.33,0.84-0.62,1.39-0.88c0.54-0.26,1.13-0.41,1.77-0.45h0.08c1.15,0,2.2,0.44,3.15,1.33
 	c0.38-0.33,0.84-0.62,1.39-0.88c0.54-0.26,1.13-0.41,1.77-0.45h0.09c0.56,0,1.15,0.15,1.75,0.44c-0.44-0.86-0.74-1.41-0.88-1.66
 	c-1.79-2.34-4.27-3.51-7.43-3.51c-1.58,0-2.99,0.3-4.24,0.9c-1.24,0.6-2.26,1.47-3.05,2.61C7.44,11.82,7.12,12.41,6.73,13.23z"
-      />
-    </svg>
-  )
+			/>
+		</svg>
+	)
 }
 
 Umbrella.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	color: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 Umbrella.defaultProps = {
-  color: '#000000',
-  size: '30',
+	color: '#000000',
+	size: '30',
 }
 
 export default Umbrella
