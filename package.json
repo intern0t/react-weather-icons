@@ -1,6 +1,6 @@
 {
-	"name": "weather-icons-react",
-	"version": "0.1.0",
+	"name": "react-weather-icons",
+	"version": "1.0.0",
 	"description": "A ReactJS component library for @erikflowers's weather icons.",
 	"author": "intern0t",
 	"license": "GPL",
@@ -22,7 +22,7 @@
 		"deploy": "gh-pages -d example/build"
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
+		"registry": "https://npm.pkg.github.com/@intern0t"
 	},
 	"peerDependencies": {
 		"prop-types": "^15.5.4",
