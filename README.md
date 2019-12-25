@@ -2,7 +2,7 @@
 
 > A React component library for [weather icons](https://github.com/erikflowers/weather-icons) by [@erikflowers](https://github.com/erikflowers).
 
-[![NPM](https://img.shields.io/npm/v/@intern0t/react-weather-icons)](https://www.npmjs.com/package/react-weather-icons) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.com/intern0t/react-weather-icons.svg?token=TXnzUuPXyX3zDxdTyjWy&branch=master)](https://travis-ci.com/intern0t/react-weather-icons)
+[![NPM](https://img.shields.io/npm/v/@intern0t/react-weather-icons)](https://www.npmjs.com/package/@intern0t/react-weather-icons) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.com/intern0t/react-weather-icons.svg?token=TXnzUuPXyX3zDxdTyjWy&branch=master)](https://travis-ci.com/intern0t/react-weather-icons)
 
 ![Weather Icons Black](screenshots/icons-black.png)
 
