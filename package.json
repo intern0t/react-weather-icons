@@ -1,5 +1,5 @@
 {
-	"name": "react-weather-icons",
+	"name": "@intern0t/react-weather-icons",
 	"version": "1.0.0",
 	"description": "A ReactJS component library for @erikflowers's weather icons.",
 	"author": "intern0t",
