@@ -1,6 +1,6 @@
 {
 	"name": "react-weather-icons",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "A ReactJS component library for @erikflowers's weather icons.",
 	"author": "intern0t",
 	"license": "GPL",
