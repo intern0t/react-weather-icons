@@ -5,6 +5,7 @@ export default class App extends Component {
 	render() {
 		let color = "#000000",
 			size = 40;
+
 		return (
 			<div>
 				<Icons.HurricaneWarning color={color} size={size} />
